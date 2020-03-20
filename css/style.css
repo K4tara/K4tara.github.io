@@ -1,0 +1,8 @@
+.l-grid-for-large-items img:hover{
+    filter: grayscale(20%);
+    transform: scale(1.05);
+}
+
+.l-grid-for-large-items img{
+    transition: 0.8s;
+}

@@ -12,6 +12,7 @@ https://twitter.com/cnoss
 
 <head>
 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Screendesign Dokumentation von Frederik Hausen & Katrin Schweitzer</title>
@@ -24,21 +25,13 @@ https://twitter.com/cnoss
   <link rel="stylesheet" href="css/040-modules.css">
   <link rel="stylesheet" href="css/050-addons.css">
 
-  <script type="text/javascript">
-    function showImage(){
-      document.getElementById('loadingImage').style.display='block';
-    }
-    function popup(mylink, windowname){
-      if (! window.focus)
-        return true;
-      var href;
-      if (typeof(mylink) == 'string')
-        href=mylink;
-      else 
-        href=mylink.href;
-      window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
-      return false;
-    }   
+  <link href="css/lightbox.min.css" rel="stylesheet" />
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  
+  <script>
+    lightbox.option({
+    
+    })
   </script>
 
 </head>
@@ -53,12 +46,12 @@ https://twitter.com/cnoss
     <div class="l-grid-for-large-items">
 
       <!-- ContentBlock 1/3 Bild 2/3 Text 
-          ####################################################################-->
+          ####################################################################
           <figure class="m-portfolioItem">
             <img class="m-portfolioItem-image" src="img/Projektbeschreibung.png">
             <figcaption>
               <h2 class="m-portfolioItem-title">Arbeitsauftrag</h2>
-              <!--<h3 class="m-portfolioItem-subtitle">Anforderungen und Ziele</h3>-->
+              
               <p>In diesem Projekt soll ein alternativer Zugang der Werke des <a href="http://lucascranach.org/index.php">
                 Cranach Digital Archive</a>  in Form eines Zeitrahls geschaffen werden, 
                 welche als Ergänzung zum bestehenden Archiv fungiert. Es gilt, die Masse an Werken durch eine einfache Navigation zu verbinden und zu kontextualisieren.
@@ -71,6 +64,28 @@ https://twitter.com/cnoss
               </p>
             </figcaption>
           </figure>
+        -->
+
+      <!-- ContentBlock Textblock mit Überschrift links
+        ####################################################################-->
+        <figure class="m-portfolioItem">
+          <figcaption>
+            <h2 class="m-portfolioItem-title">Arbeitsauftrag</h2>
+            <!--<h3 class="m-portfolioItem-subtitle">Smartphone</h3>-->
+          </figcaption>
+          <figcaption>
+            <p>In diesem Projekt soll ein alternativer Zugang der Werke des <a href="http://lucascranach.org/index.php">
+              Cranach Digital Archive</a>  in Form eines Zeitrahls geschaffen werden, 
+              welche als Ergänzung zum bestehenden Archiv fungiert. Es gilt, die Masse an Werken durch eine einfache Navigation zu verbinden und zu kontextualisieren.
+              Zudem ist eine Anreicherung der bestehenden Daten mit weiteren Informationen (historische Rahmenbedingungen etc.) erwünscht.
+              Allgemein soll die Webseite in zwei Ebenen aufgeteilt sein: Die Einstiegsseite beinhaltet den Zeitstrahl und die wichtigsten Informationen; 
+              die Detailebene soll weiterführende Informationen und Verbindungen bereitstellen. 
+            <p>Der zu entwickelnde Zeitstrahl und die ihn umgebende Webseite soll allerdings nur eine Ergänzung zum Cranach Digital Archive darstellen und für Detailinformationen zu 
+              einem Werk auf das bestehende Archiv verweisen. Durch diese alternative Darstellungsform soll neben einer gezielten Suche einzelner Werke nun auch eine explorative Erkundung 
+              unterstützt werden, um insgesamt ein größeres Nutzerspektrum einzubeziehen.
+            </p>
+          </figcaption>
+        </figure>
 
 
 
@@ -78,7 +93,8 @@ https://twitter.com/cnoss
       <!-- ContentBlock 50% Bild 50% Text
           ####################################################################-->
           <figure class="m-portfolioItem2Columns">
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Sidebar.png">
+            <a href="img/Laptop - D2-Zoom-With_Sidebar.png" data-lightbox="Laptop - D2-Zoom-With_Sidebar" data-title="Laptop - Zoom, Sidebar">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Sidebar.png"></a>
             <figcaption>
               <h2 class="m-portfolioItem-title">Designkonzept</h2>
               <h3 class="m-portfolioItem-subtitle">PC / Laptop</h3>
@@ -91,8 +107,6 @@ https://twitter.com/cnoss
                 suchen oder eine Detailebene zu einer Kategorie aufrufen. Zusätzlich gibt es einen Reset (Wiederherstellen der ursprünglichen Ansicht), Home 
                 (Zurück zur Hauptseite des CDA) und Hilfe-Button.
               </p>
-              <input type="button" value="Bild anzeigen" onclick="showImage();"/>
-              <img id="loadingImage" src="img/Laptop - D2-Zoom-With_Sidebar.png" style="display:none;"/>
             </figcaption>
           </figure>
 
@@ -100,14 +114,16 @@ https://twitter.com/cnoss
         ####################################################################-->
         <figure class="m-portfolioItem3Columns">
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Hovercard.png">
+            <a href="img/Laptop - D2-Zoom-With_Hovercard.png" data-lightbox="Laptop - 1" data-title="Laptop - Zoom, Hovercard">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Hovercard.png"></a>
             <h3 class="m-portfolioItem-subtitle">Hovercard</h3>
             <p>Mit der Maus kann der Benutzer über die einzelnen Kästchen hovern, um die Simple Card des Werkes 
               (mit Bildvorschau, Titel und Jahr) ansehen zu können. </p>
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Card.png">
+            <a href="img/Laptop - D2-Zoom-With_Card.png" data-lightbox="Laptop - 1" data-title="Laptop - Zoom, Card">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Card.png"></a>
             <h3 class="m-portfolioItem-subtitle">Card</h3> 
             <p>Wird der Benutzer vom Werk angesprochen, kann er auf die Simple Card klicken und die Extended Card öffnet sich.
               Neben den bisherigen Informationen, wird so eine Kurzbeschreibung des Werkes, sowie ein "Mehr anzeigen"-Button bereitgestellt,
@@ -115,7 +131,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Total-With_Hovercard.png">
+            <a href="img/Laptop - D2-Total-With_Hovercard.png" data-lightbox="Laptop - 1" data-title="Laptop - Total, Hovercard">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Total-With_Hovercard.png"></a>
             <h3 class="m-portfolioItem-subtitle">Ansicht</h3> 
             <p>Über den Zoom-Balken kann sowohl eine sehr weite Ansicht über alle Jahre, als auch eine Detailansicht über nur ein 
               paar Jahre oder nur ein einziges Jahr bis hin zur Monatsansicht gewählt werden.</p>
@@ -126,21 +143,24 @@ https://twitter.com/cnoss
         ####################################################################-->
         <figure class="m-portfolioItem3Columns">
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Sidebar-Filter.png">
+            <a href="img/Laptop - D2-Zoom-With_Sidebar-Filter.png" data-lightbox="Laptop - 2" data-title="Laptop - Sidebar, Filter">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Sidebar-Filter.png"></a>
             <h3 class="m-portfolioItem-subtitle">Filter</h3>
             <p>Zum Filtern nach Kategorie deaktiviert der Benutzer per Mausklick (oder Touch) die Checkbox/en, um nur noch Werke (Kästchen) 
               der gewünschten Kategorie/n angezeigt zu bekommen.</p>
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Sidebar-Detail.png">
+            <a href="img/Laptop - D2-Zoom-With_Sidebar-Detail.png" data-lightbox="Laptop - 2" data-title="Laptop - Sidebar, Detailinformationen">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Zoom-With_Sidebar-Detail.png"></a>
             <h3 class="m-portfolioItem-subtitle">Detailinformationen</h3> 
             <p>Für nähere Informationen über die Anzahl der Werke einer Kategorie klickt der Benutzer mit der Maus auf die gewünschte Kategorie.
               Daraufhin wird angezeigt wie viele Werke insgesamt vorhanden sind und wie viele davon gerade auf dem Screen zu sehen sind.</p>
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Laptop - D2-Detail.png">
+            <a href="img/Laptop - D2-Detail.png" data-lightbox="Laptop - 2" data-title="Laptop - Detailebene">
+            <img class="m-portfolioItem-image" src="img/Laptop - D2-Detail.png"></a>
             <h3 class="m-portfolioItem-subtitle">Detailseite</h3> 
             <p>Über "Alle anzeigen" gelangt der Benutzer dann auf eine Detailebene, auf der alle Werke der ausgewählten Kategorie in dem 
               ausgewählten Zeitraum als Bildvorschau zu sehen sind. Durch die Pfeile kann der Benutzer in dieser (Zeit- und Bild-) Ansicht durch 
@@ -192,7 +212,8 @@ https://twitter.com/cnoss
         ####################################################################-->
         <figure class="m-portfolioItem3Columns">
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll.png">
+            <a href="img/Smartphone - Startscroll.png" data-lightbox="Smartphone - 1" data-title="Smartphone - Startseite">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll.png"></a>
             <h3 class="m-portfolioItem-subtitle">Homescreen</h3>
             <p>Beim Öffnen der Timeline Seite landet der Benutzer auf einem Screen mit dem oben dargestellten Aufbau.
               Die Time Ansicht ist als Scrollbalken angeordnet und kann per Touch über die Pfeile oder mit hin und her Swipen verändert werden. 
@@ -203,7 +224,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-With_Menubar.png">
+            <a href="img/Smartphone - Startscroll-With_Menubar.png" data-lightbox="Smartphone - 1" data-title="Smartphone - Menubar">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-With_Menubar.png"></a>
             <h3 class="m-portfolioItem-subtitle">Menubar</h3> 
             <p>Die Menubar kann jederzeit aufgerufen werden und stellt sowohl eine Auswahl an Filtern, als auch eine Hilfestellung, 
               Einstellungen bezüglich der Sprache und eine direkte Verbindung zur Homeseite des Cranach Digital Archive bereit. 
@@ -212,7 +234,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Card.png">
+            <a href="img/Smartphone - Card.png" data-lightbox="Smartphone - 1" data-title="Smartphone - Card">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Card.png"></a>
             <h3 class="m-portfolioItem-subtitle">Carddesign</h3> 
             <p>Beim Öffnen des Pfeils einer Simple Card wird diese zu einer Extended Card vergrößert und die anderen Simple Cards rücken 
               automatisch nach unten. In dieser Ansicht kann der Benutzer detailiertere Informationen über das Werk (Standort, Besitzer und eine Kurzbeschreibeung, wenn vorhanden) einsehen.
@@ -226,7 +249,8 @@ https://twitter.com/cnoss
         ####################################################################-->
         <figure class="m-portfolioItem3Columns">
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Show_all.png">
+            <a href="img/Smartphone - Show_all.png" data-lightbox="Smartphone - 2" data-title="Smartphone - Alle anzeigen">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Show_all.png"></a>
             <h3 class="m-portfolioItem-subtitle">Ansicht ändern</h3>
             <p>Über "Alle anzeigen" verschwindet die explorative Simple Card-Ansicht. Stattdessen erhält der Benutzer nun eine
               übersichtlichere Ansicht mit Informationen über die Anzahl der Werke und die Werke an sich in Blöcken aufgelistet.
@@ -235,7 +259,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-Filter_Year-Menubar.png">
+            <a href="img/Smartphone - Startscroll-Filter_Year-Menubar.png" data-lightbox="Smartphone - 2" data-title="Smartphone - Zeitspanne">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-Filter_Year-Menubar.png"></a>
             <!-- <h3 class="m-portfolioItem-subtitle">Optionale Überschrift</h3> -->
             <p>Über die Menubar kann unter "Zeitspanne" ein Slider geöffnet werden, der die Zeitabstände der Timeline vergrößert oder verringert. 
               Zur Verfügung steht eine Monatsansicht, die standard Jahresansicht, sowie eine 2, 5 und 10-Jahres Ansicht. Per Touch
@@ -244,7 +269,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-Filter_Year.png">
+            <a href="img/Smartphone - Startscroll-Filter_Year.png" data-lightbox="Smartphone - 2" data-title="Smartphone - Zeitspanne, Ansicht">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-Filter_Year.png"></a>
             <!-- <h3 class="m-portfolioItem-subtitle">Optionale Überschrift</h3> -->
             <p>Das Layout mit veränderter Zeitansicht lässt sich genauso bedienen wie das Ursprüngliche. Statt einer Jahresübersicht
               gilt die Übersicht allerdings nun für mehrere Jahre oder einen Monat. Sie zeigt die ausgewählte Spanne an Jahren bis
@@ -256,7 +282,8 @@ https://twitter.com/cnoss
         ####################################################################-->
         <figure class="m-portfolioItem3Columns">
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Show_all-Filter-Menubar.png">
+            <a href="img/Smartphone - Show_all-Filter-Menubar.png" data-lightbox="Smartphone - 3" data-title="Smartphone - Filter">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Show_all-Filter-Menubar.png"></a>
             <h3 class="m-portfolioItem-subtitle">Filter</h3>
             <p>In der Menubar kann für Gemälde, Grafiken und Archivalien jeweils die Checkbox deaktiviert werden,
               um nur die ausgewählte/n Kategorie/n angezeigt zu bekommen. Die Checkboxen können jederzeit in jeglicher Kombination 
@@ -264,7 +291,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Show_all-Filter.png">
+            <a href="img/Smartphone - Show_all-Filter.png" data-lightbox="Smartphone - 3" data-title="Smartphone - Alle anzeigen, Filter">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Show_all-Filter.png"></a>
             <!-- <h3 class="m-portfolioItem-subtitle">Optionale Überschrift</h3> -->
             <p>Bei der Filterung nach Kategorien wird/werden nur noch die Ausgewählte/n in der Übersicht angezeigt.
               Auch in der Simple Card-Ansicht oder der erweiterten Blockformat-Ansicht sind nur die Werke der ausgewählten
@@ -272,7 +300,8 @@ https://twitter.com/cnoss
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Only_Favourites.png">
+            <a href="img/Smartphone - Only_Favourites.png" data-lightbox="Smartphone - 3" data-title="Smartphone - Nur Favoriten">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Only_Favourites.png"></a>
             <!-- <h3 class="m-portfolioItem-subtitle">Optionale Überschrift</h3> -->
             <p>Zusätzlich zum Kategorienfilter kann der Benutzer auch nur favorisierte Werke anzeigen lassen 
               (durch Aktivieren des Switches in der Menubar). Durch Betätigung des List-Icons wechselt die standard Simple Card-Ansicht
@@ -284,21 +313,24 @@ https://twitter.com/cnoss
         ####################################################################-->
         <figure class="m-portfolioItem3Columns">
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-Filter_Year-Searchbar.png">
+            <a href="img/Smartphone - Startscroll-Filter_Year-Searchbar.png" data-lightbox="Smartphone - 4" data-title="Smartphone - Suchleiste">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Startscroll-Filter_Year-Searchbar.png"></a>
             <h3 class="m-portfolioItem-subtitle">Suche</h3>
             <p>Über den Such-Button kann jederzeit nach allen möglichen Begriffen gefiltert oder gesucht werden. Es öffnet sich ein Eingabefeld,
               das über die Smartphone Tastatur oder Spracheingabe funktioniert.</p>
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Searchbar-D1.png">
+            <a href="img/Smartphone - Searchbar-D1.png" data-lightbox="Smartphone - 4" data-title="Smartphone - Suchergebnisse, Card">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Searchbar-D1.png"></a>
             <!-- <h3 class="m-portfolioItem-subtitle">Optionale Überschrift</h3> -->
             <p>Die Suchergebnisse werden standardmäßig in Simple Card-Ansicht aufgelistet, über das List-Icon kann die
               Ansicht jedoch zur Blockformat-Ansicht geändert werden.</p>
           </figcaption>
   
           <figcaption>
-            <img class="m-portfolioItem-image" src="img/Smartphone - Searchbar-D2.png">
+            <a href="img/Smartphone - Searchbar-D2.png" data-lightbox="Smartphone - 4" data-title="Smartphone - Suchergebnisse, Block">
+            <img class="m-portfolioItem-image" src="img/Smartphone - Searchbar-D2.png"></a>
             <!-- <h3 class="m-portfolioItem-subtitle">Optionale Überschrift</h3> -->
             <p>Von der Blockformat-Ansicht kann über den Dashboard-Button wieder in die Simple Card-Ansicht gewechselt werden.
               Diese Funktion findet sich ebenfalls bei der Filterung nach favorisierten Werken.</p>
@@ -359,18 +391,24 @@ https://twitter.com/cnoss
       <!-- ContentBlock Großes Bild
         ####################################################################-->
       <figure class="m-portfolioItemCenteredImg">
-        <img class="m-portfolioItem-image" src="img/gg-sketch-flaeche.jpg">
+        <a href="img/gg-sketch-flaeche.jpg" data-lightbox="Patternlab" data-title="Patternlab - PC/Laptop">
+        <img class="m-portfolioItem-image" src="img/gg-sketch-flaeche.jpg"></a>
         <figcaption>
-          <p> Gestaltübersicht PC/Laptop</br> </p>
+          <p>
+
+          </p> Gestaltübersicht PC/Laptop</br> </p>
         </figcaption>
       </figure>
 
       <!-- ContentBlock Großes Bild
         ####################################################################-->
         <figure class="m-portfolioItemCenteredImg">
-          <img class="m-portfolioItem-image" src="img/gg-sketch-flaeche.jpg">
+          <a href="img/gg-sketch-flaeche.jpg" data-lightbox="Patternlab" data-title="Patternlab - Smartphone">
+          <img class="m-portfolioItem-image" src="img/gg-sketch-flaeche.jpg"></a>
           <figcaption>
-            <p> Gestaltübersicht Smartphone</br> </p>
+            <p>
+
+            </p> Gestaltübersicht Smartphone</br> </p>
           </figcaption>
         </figure>
 
@@ -388,6 +426,7 @@ https://twitter.com/cnoss
         Medieninformatik</a> an der <a href="https://www.th-koeln.de/">TH Köln</a> entstanden.
     </p>
   </footer>
+
 
 </body>
 
