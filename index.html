@@ -24,6 +24,23 @@ https://twitter.com/cnoss
   <link rel="stylesheet" href="css/040-modules.css">
   <link rel="stylesheet" href="css/050-addons.css">
 
+  <script type="text/javascript">
+    function showImage(){
+      document.getElementById('loadingImage').style.display='block';
+    }
+    function popup(mylink, windowname){
+      if (! window.focus)
+        return true;
+      var href;
+      if (typeof(mylink) == 'string')
+        href=mylink;
+      else 
+        href=mylink.href;
+      window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+      return false;
+    }   
+  </script>
+
 </head>
 
 <body>
@@ -74,6 +91,8 @@ https://twitter.com/cnoss
                 suchen oder eine Detailebene zu einer Kategorie aufrufen. Zusätzlich gibt es einen Reset (Wiederherstellen der ursprünglichen Ansicht), Home 
                 (Zurück zur Hauptseite des CDA) und Hilfe-Button.
               </p>
+              <input type="button" value="Bild anzeigen" onclick="showImage();"/>
+              <img id="loadingImage" src="img/Laptop - D2-Zoom-With_Sidebar.png" style="display:none;"/>
             </figcaption>
           </figure>
 
