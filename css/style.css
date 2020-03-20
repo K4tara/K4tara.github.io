@@ -1,5 +1,5 @@
 .l-grid-for-large-items img:hover{
-    filter: grayscale(20%);
+    filter: contrast(1.2);
     transform: scale(1.05);
 }
 
