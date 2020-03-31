@@ -1,0 +1,91 @@
+<svg width="800" height="437" viewBox="0 0 800 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="437" fill="#B4B4B4"/>
+<g opacity="0.5">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="559" y="10" width="100" height="100">
+<rect x="559" y="10" width="100" height="100" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="559" y="10" width="1000" height="1000" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="459" y="10" width="80" height="80">
+<rect x="459" y="10" width="80" height="80" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1)">
+<rect x="459" y="10" width="800" height="800" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="376" y="10" width="63" height="63">
+<rect x="376" y="10" width="63" height="63" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask2)">
+<rect x="376" y="10" width="630" height="630" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask3" mask-type="alpha" maskUnits="userSpaceOnUse" x="306" y="10" width="50" height="50">
+<rect x="306" y="10" width="50" height="50" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask3)">
+<rect x="306" y="10" width="500" height="500" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask4" mask-type="alpha" maskUnits="userSpaceOnUse" x="246" y="10" width="40" height="40">
+<rect x="246" y="10" width="40" height="40" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask4)">
+<rect x="246" y="10" width="400" height="400" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask5" mask-type="alpha" maskUnits="userSpaceOnUse" x="194" y="10" width="32" height="32">
+<rect x="194" y="10" width="31.5" height="31.5" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask5)">
+<rect x="194" y="10" width="315" height="315" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask6" mask-type="alpha" maskUnits="userSpaceOnUse" x="73" y="10" width="16" height="16">
+<rect x="73" y="10" width="16" height="16" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask6)">
+<rect x="73" y="10" width="160" height="160" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask7" mask-type="alpha" maskUnits="userSpaceOnUse" x="149" y="10" width="25" height="25">
+<rect x="149" y="10" width="25" height="25" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask7)">
+<rect x="149" y="10" width="250" height="250" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask8" mask-type="alpha" maskUnits="userSpaceOnUse" x="109" y="10" width="20" height="20">
+<rect x="109" y="10" width="20" height="20" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask8)">
+<rect x="109" y="10" width="200" height="200" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask9" mask-type="alpha" maskUnits="userSpaceOnUse" x="40" y="10" width="13" height="13">
+<rect x="40" y="10" width="12.5" height="12.5" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask9)">
+<rect x="40" y="10" width="125" height="125" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+<g opacity="0.5">
+<mask id="mask10" mask-type="alpha" maskUnits="userSpaceOnUse" x="10" y="10" width="10" height="10">
+<rect x="10" y="10" width="10" height="10" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask10)">
+<rect x="10" y="10" width="100" height="100" fill="#FFCC00" fill-opacity="0.5"/>
+</g>
+</g>
+</svg>
